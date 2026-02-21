@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom"
 import axios from "axios"
 import { useCarrito } from "../context/CarritoContext"
 
-const API = "https://fotovega-backend.onrender.com"
+const API = "http://localhost:5000"
 
 export default function EventDetail() {
   const { id } = useParams()
@@ -62,7 +62,7 @@ export default function EventDetail() {
             return (
               <div key={foto.id} className="break-inside-avoid relative group">
                 <img
-                  src={`${API}${foto.url}`}
+                  src={foto.url.startsWith("http") ? foto.url : `${API}${foto.url}`}
                   alt={foto.descripcion || "Foto del evento"}
                   className="w-full object-cover"
                 />
