@@ -19,7 +19,7 @@ function Contact() {
     e.preventDefault()
 
     try {
-      const response = await fetch("https://fotovega-backend.onrender.com", {
+      const response = await fetch("https://fotovega-backend.onrender.com/api/contacto", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
