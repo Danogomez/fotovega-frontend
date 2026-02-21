@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import axios from "axios"
 import { useCarrito } from "../context/CarritoContext"
 
-const API = "http://localhost:5000"
+const API = "https://fotovega-backend.onrender.com/"
 
 export default function Checkout() {
   const { items, total, limpiar } = useCarrito()

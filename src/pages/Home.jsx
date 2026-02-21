@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import axios from "axios"
 
-const API = "http://localhost:5000"
+const API = "https://fotovega-backend.onrender.com/"
 
 function Home() {
   const [eventos, setEventos] = useState([])
