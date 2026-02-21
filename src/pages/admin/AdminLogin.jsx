@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
-const API = "https://fotovega-backend.onrender.com/"
+const API = "https://fotovega-backend.onrender.com"
 
 export default function AdminLogin() {
   const navigate = useNavigate()

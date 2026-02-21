@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 import axios from "axios"
 
-const API = "https://fotovega-backend.onrender.com/"
+const API = "https://fotovega-backend.onrender.com"
 
 function authHeader() {
   return { Authorization: `Bearer ${localStorage.getItem("fotovega_admin_token")}` }

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useCarrito } from "../context/CarritoContext"
 
-const API = "https://fotovega-backend.onrender.com/"
+const API = "https://fotovega-backend.onrender.com"
 
 export default function Carrito() {
   const { items, quitar, total, cantidad } = useCarrito()

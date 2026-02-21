@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import axios from "axios"
 
-const API = "https://fotovega-backend.onrender.com/"
+const API = "https://fotovega-backend.onrender.com"
 console.log("Events montado")
 
 export default function Events() {
